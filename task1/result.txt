@@ -1,0 +1,57 @@
+=== Build ===
+make: Nothing to be done for 'all'.
+=== Generate file A ===
+=== Create sparse B ===
+=== Gzip A and B ===
+=== Restore B -> C through program ===
+=== Create D with block size 100 ===
+=== File stats ===
+  File: A
+  Size: 4194305   	Blocks: 8200       IO Block: 4096   regular file
+Device: 8,32	Inode: 68887       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   sasha)   Gid: ( 1000/   sasha)
+Access: 2026-04-12 17:15:24.897675991 +0500
+Modify: 2026-04-12 17:15:24.887675965 +0500
+Change: 2026-04-12 17:15:24.887675965 +0500
+ Birth: 2026-04-12 17:15:24.877675938 +0500
+  File: A.gz
+  Size: 4107      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,32	Inode: 68889       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   sasha)   Gid: ( 1000/   sasha)
+Access: 2026-04-12 17:15:24.887675965 +0500
+Modify: 2026-04-12 17:15:24.907676016 +0500
+Change: 2026-04-12 17:15:24.907676016 +0500
+ Birth: 2026-04-12 17:15:24.887675965 +0500
+  File: B
+  Size: 4194305   	Blocks: 24         IO Block: 4096   regular file
+Device: 8,32	Inode: 68888       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   sasha)   Gid: ( 1000/   sasha)
+Access: 2026-04-12 17:15:24.907676016 +0500
+Modify: 2026-04-12 17:15:24.887675965 +0500
+Change: 2026-04-12 17:15:24.887675965 +0500
+ Birth: 2026-04-12 17:15:24.887675965 +0500
+  File: B.gz
+  Size: 4107      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,32	Inode: 68890       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   sasha)   Gid: ( 1000/   sasha)
+Access: 2026-04-12 17:15:24.927676068 +0500
+Modify: 2026-04-12 17:15:24.917676042 +0500
+Change: 2026-04-12 17:15:24.917676042 +0500
+ Birth: 2026-04-12 17:15:24.907676016 +0500
+  File: C
+  Size: 4194305   	Blocks: 24         IO Block: 4096   regular file
+Device: 8,32	Inode: 68892       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   sasha)   Gid: ( 1000/   sasha)
+Access: 2026-04-12 17:15:24.927676068 +0500
+Modify: 2026-04-12 17:15:24.937676093 +0500
+Change: 2026-04-12 17:15:24.937676093 +0500
+ Birth: 2026-04-12 17:15:24.927676068 +0500
+  File: D
+  Size: 4194305   	Blocks: 32         IO Block: 4096   regular file
+Device: 8,32	Inode: 68893       Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/   sasha)   Gid: ( 1000/   sasha)
+Access: 2026-04-12 17:15:24.937676093 +0500
+Modify: 2026-04-12 17:15:24.957676146 +0500
+Change: 2026-04-12 17:15:24.957676146 +0500
+ Birth: 2026-04-12 17:15:24.937676093 +0500
+=== Done ===
