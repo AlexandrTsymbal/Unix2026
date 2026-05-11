@@ -1,0 +1,40 @@
+
+===== BUILD =====
+rm -f myinit testproc
+gcc -Wall -Wextra -o myinit myinit.c
+gcc -Wall -Wextra -o testproc testproc.c
+
+===== CLEAN OLD =====
+
+===== START MYINIT =====
+
+===== CHECK 3 PROCESSES =====
+488 /mnt/c/Users/sasha/Desktop/vs/task3/testproc proc1
+489 /mnt/c/Users/sasha/Desktop/vs/task3/testproc proc2
+490 /mnt/c/Users/sasha/Desktop/vs/task3/testproc proc3
+Expected: 3
+Actual: 3
+
+===== KILL PROC2 =====
+Expected after restart: 3
+Actual: 3
+
+===== RELOAD CONFIG =====
+504 /mnt/c/Users/sasha/Desktop/vs/task3/testproc singleproc
+Expected after HUP: 1
+Actual: 1
+
+===== LOG CONTENT =====
+myinit started
+Started process pid=488 cmd=/mnt/c/Users/sasha/Desktop/vs/task3/testproc proc1
+Started process pid=489 cmd=/mnt/c/Users/sasha/Desktop/vs/task3/testproc proc2
+Started process pid=490 cmd=/mnt/c/Users/sasha/Desktop/vs/task3/testproc proc3
+Child pid=489 terminated. Restarting.
+Started process pid=497 cmd=/mnt/c/Users/sasha/Desktop/vs/task3/testproc proc2
+Reloading configuration
+Stopped process pid=488
+Stopped process pid=497
+Stopped process pid=490
+Started process pid=504 cmd=/mnt/c/Users/sasha/Desktop/vs/task3/testproc singleproc
+
+===== DONE =====
